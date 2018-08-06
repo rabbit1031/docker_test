@@ -5,10 +5,10 @@ identidock:
   environment:
     ENV: PROD
   volumes:
-  - ./app:/app
+    - ./app:/app
   links:
-  - dnmonster
-  - redis
+    - dnmonster
+    - redis
 
 dnmonster:
   image: amouat/dnmonster
